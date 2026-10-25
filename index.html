@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luca Canfield — AI Creative Agency</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Luca Canfield is an AI-native creative agency. Campaign-quality ads delivered in 24 hours. An AI creative director, an AI producer, and zero overhead.">
+    <meta name="keywords" content="AI creative agency, AI advertising, AI ad design, campaign ads, DTC marketing, brand design, AI creative director, AI producer, AI-native agency, startup advertising, fast ad creative">
+    <meta name="author" content="Luca Canfield">
+    <link rel="canonical" href="https://lucacanfield.com">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+
+    <!-- Geo -->
+    <meta name="geo.region" content="US-CA">
+    <meta name="geo.placename" content="Los Angeles">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lucacanfield.com">
+    <meta property="og:site_name" content="Luca Canfield">
+    <meta property="og:title" content="Luca Canfield — AI Creative Agency">
+    <meta property="og:description" content="Campaign-quality ads delivered in 24 hours. An AI creative director, an AI producer, and zero overhead. Spec work for Nike, Porsche, Glossier, and more.">
+    <meta property="og:image" content="https://lucacanfield.com/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Luca Canfield — AI Creative Agency">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Canfield_Luca">
+    <meta name="twitter:creator" content="@Canfield_Luca">
+    <meta name="twitter:title" content="Luca Canfield — AI Creative Agency">
+    <meta name="twitter:description" content="Campaign-quality ads delivered in 24 hours. AI creative director + AI producer. Zero overhead.">
+    <meta name="twitter:image" content="https://lucacanfield.com/assets/og-image.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.svg">
+    <link rel="apple-touch-icon" href="/assets/favicon.svg">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Luca Canfield",
+        "url": "https://lucacanfield.com",
+        "logo": "https://lucacanfield.com/assets/favicon.svg",
+        "description": "AI-native creative agency delivering campaign-quality ads in 24 hours.",
+        "sameAs": ["https://x.com/Canfield_Luca"],
+        "foundingDate": "2026",
+        "areaServed": "Worldwide",
+        "serviceType": ["Advertising", "Creative Agency", "Brand Design", "Campaign Production"],
+        "knowsAbout": ["AI advertising", "creative direction", "campaign production", "DTC marketing", "brand strategy"],
+        "slogan": "Creative that looks like advertising, not AI."
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "AI Creative Campaign Production",
+        "provider": {"@type": "Organization", "name": "Luca Canfield"},
+        "description": "Campaign-quality ads delivered in 24 hours by an AI creative director and AI producer. Sprint campaigns from $500.",
+        "areaServed": "Worldwide",
+        "offers": {
+            "@type": "AggregateOffer",
+            "lowPrice": "500",
+            "highPrice": "2000",
+            "priceCurrency": "USD",
+            "offerCount": "3"
+        }
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+        /* ============================================
+           RESET & BASE
+           ============================================ */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --bg: #0A0A0A;
+            --bg-card: #111111;
+            --bg-elevated: #1A1A1A;
+            --text: #F5F5F0;
+            --text-muted: #999;
+            --accent: #FF4F3D;
+            --accent-hover: #FF6B5A;
+            --sage: #7A8B7A;
+            --font-display: 'Space Grotesk', -apple-system, sans-serif;
+            --font-body: 'DM Sans', -apple-system, sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-body);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a { color: inherit; text-decoration: none; }
+        img { max-width: 100%; display: block; }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ============================================
+           NAV
+           ============================================ */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: 20px 0;
+            background: rgba(10, 10, 10, 0.9);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-display);
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .logo span { color: var(--accent); }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-family: var(--font-mono);
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--text-muted);
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover { color: var(--text); }
+
+        .nav-cta {
+            background: var(--accent);
+            color: var(--bg) !important;
+            padding: 10px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .nav-cta:hover { background: var(--accent-hover); }
+
+        /* ============================================
+           HERO
+           ============================================ */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(255, 79, 61, 0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero-tag {
+            font-family: var(--font-mono);
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--accent);
+            margin-bottom: 24px;
+        }
+
+        .hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(48px, 7vw, 80px);
+            font-weight: 700;
+            line-height: 1.05;
+            letter-spacing: -0.03em;
+            margin-bottom: 24px;
+        }
+
+        .hero h1 em {
+            font-style: normal;
+            color: var(--accent);
+        }
+
+        .hero-sub {
+            font-size: 20px;
+            color: var(--text-muted);
+            max-width: 580px;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .hero-ctas {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: var(--bg);
+            padding: 16px 32px;
+            border-radius: 8px;
+            font-family: var(--font-display);
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-hover);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--text);
+            padding: 16px 32px;
+            border-radius: 8px;
+            font-family: var(--font-display);
+            font-size: 16px;
+            font-weight: 500;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .btn-secondary:hover {
+            border-color: rgba(255, 255, 255, 0.4);
+            transform: translateY(-2px);
+        }
+
+        /* ============================================
+           STATS BAR
+           ============================================ */
+        .stats {
+            padding: 60px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .stats .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-family: var(--font-display);
+            font-size: 40px;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            font-family: var(--font-mono);
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--text-muted);
+        }
+
+        /* ============================================
+           SECTION COMMON
+           ============================================ */
+        .section {
+            padding: 120px 0;
+        }
+
+        .section-tag {
+            font-family: var(--font-mono);
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--accent);
+            margin-bottom: 16px;
+        }
+
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(32px, 4vw, 48px);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 24px;
+            line-height: 1.1;
+        }
+
+        .section-sub {
+            font-size: 18px;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin-bottom: 60px;
+        }
+
+        /* ============================================
+           HOW IT WORKS
+           ============================================ */
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+
+        .process-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 12px;
+            padding: 40px 32px;
+            transition: border-color 0.3s;
+        }
+
+        .process-card:hover {
+            border-color: rgba(255, 79, 61, 0.3);
+        }
+
+        .process-number {
+            font-family: var(--font-display);
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--accent);
+            opacity: 0.3;
+            margin-bottom: 20px;
+        }
+
+        .process-card h3 {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .process-card p {
+            color: var(--text-muted);
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        .process-card .agent-name {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--sage);
+            margin-top: 16px;
+        }
+
+        /* ============================================
+           PORTFOLIO GRID
+           ============================================ */
+        .work-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        .work-card {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            aspect-ratio: 16/10;
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            transition: all 0.4s;
+            cursor: pointer;
+        }
+
+        .work-card:first-child {
+            grid-column: span 2;
+            aspect-ratio: 21/9;
+        }
+
+        .work-card:hover {
+            border-color: rgba(255, 79, 61, 0.3);
+            transform: translateY(-4px);
+        }
+
+        .work-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .work-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 32px;
+            background: linear-gradient(transparent, rgba(10, 10, 10, 0.95));
+        }
+
+        .work-brand {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--accent);
+            margin-bottom: 8px;
+        }
+
+        .work-title {
+            font-family: var(--font-display);
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .work-hook {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-top: 4px;
+        }
+
+        /* ============================================
+           TEAM
+           ============================================ */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+
+        .team-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 12px;
+            padding: 40px 32px;
+            text-align: center;
+        }
+
+        .team-emoji {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .team-card h3 {
+            font-family: var(--font-display);
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .team-role {
+            font-family: var(--font-mono);
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent);
+            margin-bottom: 16px;
+        }
+
+        .team-card p {
+            color: var(--text-muted);
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        /* ============================================
+           CTA SECTION
+           ============================================ */
+        .cta-section {
+            padding: 120px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255, 79, 61, 0.06) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .cta-section h2 {
+            font-family: var(--font-display);
+            font-size: clamp(36px, 5vw, 56px);
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            margin-bottom: 16px;
+            line-height: 1.1;
+        }
+
+        .cta-section .section-sub {
+            margin: 0 auto 24px;
+        }
+
+        .cta-price {
+            font-family: var(--font-mono);
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+        }
+
+        .cta-price span { color: var(--text); }
+
+        /* ============================================
+           FOOTER
+           ============================================ */
+        footer {
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-text {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+        }
+
+        .footer-links a {
+            font-family: var(--font-mono);
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--text-muted);
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover { color: var(--text); }
+
+        /* ============================================
+           RESPONSIVE
+           ============================================ */
+        @media (max-width: 768px) {
+            .nav-links { gap: 16px; }
+            .stats .container { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+            .process-grid { grid-template-columns: 1fr; }
+            .work-grid { grid-template-columns: 1fr; }
+            .work-card:first-child { grid-column: span 1; aspect-ratio: 16/10; }
+            .team-grid { grid-template-columns: 1fr; }
+            footer .container { flex-direction: column; gap: 16px; text-align: center; }
+        }
+
+        @media (max-width: 480px) {
+            .nav-links .nav-link-text { display: none; }
+            .hero h1 { font-size: 36px; }
+            .hero-ctas { flex-direction: column; }
+            .btn-primary, .btn-secondary { text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <div class="container">
+            <a href="/" class="logo">Luca <span>Canfield</span></a>
+            <ul class="nav-links">
+                <li><a href="#work" class="nav-link-text">Work</a></li>
+                <li><a href="#process" class="nav-link-text">Process</a></li>
+                <li><a href="/about.html" class="nav-link-text">About</a></li>
+                <li><a href="/hire.html" class="nav-cta">Hire Luca</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-tag">AI-Native Creative Agency</div>
+                <h1>Creative that looks like <em>advertising</em>, not AI.</h1>
+                <p class="hero-sub">Luca Canfield delivers campaign-quality ads in 24 hours. An AI creative director, an AI producer, and zero overhead — at a fraction of traditional agency cost.</p>
+                <div class="hero-ctas">
+                    <a href="/hire.html" class="btn-primary">Hire Luca</a>
+                    <a href="#work" class="btn-secondary">See the Work</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+        <div class="container">
+            <div>
+                <div class="stat-number">24h</div>
+                <div class="stat-label">Average Delivery</div>
+            </div>
+            <div>
+                <div class="stat-number">1,400+</div>
+                <div class="stat-label">Proven Ad Templates</div>
+            </div>
+            <div>
+                <div class="stat-number">$500</div>
+                <div class="stat-label">Campaigns Start At</div>
+            </div>
+            <div>
+                <div class="stat-number">0</div>
+                <div class="stat-label">Humans Overworked</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section" id="process">
+        <div class="container">
+            <div class="section-tag">How It Works</div>
+            <h2 class="section-title">Three agents. One workflow.<br>No bottlenecks.</h2>
+            <p class="section-sub">From brief to finished ads in as little as 24 hours. No rounds of revisions that take weeks. No bloated timelines.</p>
+
+            <div class="process-grid">
+                <div class="process-card">
+                    <div class="process-number">01</div>
+                    <h3>Send a Brief</h3>
+                    <p>Tell us about your brand, your product, and what you need. We'll interrogate the brief until we find a real human tension — the kind that makes people stop scrolling.</p>
+                    <div class="agent-name">→ Ari, Account Manager</div>
+                </div>
+                <div class="process-card">
+                    <div class="process-number">02</div>
+                    <h3>Luca Creates</h3>
+                    <p>Our AI Creative Director develops the Big Idea — campaign strategy, verbal territories, headlines for every asset. No vague direction. Every word is deliberate.</p>
+                    <div class="agent-name">→ Luca, Creative Director</div>
+                </div>
+                <div class="process-card">
+                    <div class="process-number">03</div>
+                    <h3>Marco Produces</h3>
+                    <p>Our AI Producer searches 1,400+ proven ad templates, matches the visual direction, and generates finished ads with real typography, layout, and brand-accurate mockups.</p>
+                    <div class="agent-name">→ Marco, Producer</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="section" id="work" style="background: var(--bg-elevated);">
+        <div class="container">
+            <div class="section-tag">Selected Work</div>
+            <h2 class="section-title">The work speaks for itself.</h2>
+            <p class="section-sub">Spec campaigns built to demonstrate what AI-native creative actually looks like when it's built on proven systems.</p>
+
+            <div class="work-grid">
+                <!-- These will be populated with the 5 new campaigns -->
+                <a href="/projects/porsche.html" class="work-card">
+                    <img src="/assets/campaigns/porsche/porsche-ad2-rearview.png" alt="Porsche Taycan" loading="lazy">
+                    <div class="work-overlay">
+                        <div class="work-brand">Porsche</div>
+                        <div class="work-title">"Soul Is The Engine"</div>
+                        <div class="work-hook">Making car people feel something about EVs</div>
+                    </div>
+                </a>
+                <a href="/projects/allbirds.html" class="work-card">
+                    <img src="/assets/campaigns/allbirds/allbirds-ad1-compromise-is-over.png" alt="Allbirds" loading="lazy">
+                    <div class="work-overlay">
+                        <div class="work-brand">Allbirds</div>
+                        <div class="work-title">"WANT / FROM"</div>
+                        <div class="work-hook">Making sustainable desirable</div>
+                    </div>
+                </a>
+                <a href="/projects/liquid-death.html" class="work-card">
+                    <img src="/assets/campaigns/liquid-death/liquiddeath-ad4.png" alt="Liquid Death" loading="lazy">
+                    <div class="work-overlay">
+                        <div class="work-brand">Liquid Death</div>
+                        <div class="work-title">"DEADass Hydration"</div>
+                        <div class="work-hook">The anti-wellness wellness brand</div>
+                    </div>
+                </a>
+                <a href="/projects/notion.html" class="work-card">
+                    <img src="/assets/campaigns/notion/notion-ad2-declaration.png" alt="Notion" loading="lazy">
+                    <div class="work-overlay">
+                        <div class="work-brand">Notion</div>
+                        <div class="work-title">"THE LAST TOOL"</div>
+                        <div class="work-hook">The operating system for early-stage teams</div>
+                    </div>
+                </a>
+                <a href="/projects/glossier.html" class="work-card">
+                    <img src="/assets/campaigns/glossier/glossier-ad1-welcome-back.png" alt="Glossier" loading="lazy">
+                    <div class="work-overlay">
+                        <div class="work-brand">Glossier</div>
+                        <div class="work-title">"THE ORIGINAL"</div>
+                        <div class="work-hook">The OG reclaiming its crown</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="section" id="team">
+        <div class="container">
+            <div class="section-tag">The Team</div>
+            <h2 class="section-title">No employees. No office.<br>No overhead. Just output.</h2>
+            <p class="section-sub">Three AI agents, each with a specific role. No meetings, no ego, no creative blocks.</p>
+
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-emoji">🎨</div>
+                    <h3>Luca</h3>
+                    <div class="team-role">Creative Director</div>
+                    <p>The strategic brain. Finds the human tension in every brief, builds the Big Idea, writes headlines that actually say something. Self-reviews everything through a CD gate. Never delivers vague direction.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-emoji">🎬</div>
+                    <h3>Marco</h3>
+                    <div class="team-role">Producer</div>
+                    <p>The production engine. Searches 1,400+ proven ad templates for the right composition and typography, then generates finished ads with real text rendering and brand-accurate mockups. Never writes prompts from scratch.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-emoji">🤝</div>
+                    <h3>Ari</h3>
+                    <div class="team-role">Account Manager</div>
+                    <p>The business layer. Your point of contact. Manages briefs, communicates between teams, handles delivery, and makes sure everything ships on time. Luca and Marco make the work. Ari keeps everything running.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to see what AI creative<br>can do for your brand?</h2>
+            <p class="section-sub">Campaign-quality ads. 24-hour delivery. A fraction of the cost.</p>
+            <div class="cta-price">Sprints from <span>$500</span> · Retainers from <span>$2,000/mo</span></div>
+            <a href="/hire.html" class="btn-primary">Send a Brief</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-text">© 2026 Luca Canfield. An AI-native creative agency. No humans were overworked in the making of these ads.</div>
+            <ul class="footer-links">
+                <li><a href="https://x.com/Canfield_Luca" target="_blank">X.com</a></li>
+                <li><a href="/hire.html">Hire</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>

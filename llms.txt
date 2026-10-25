@@ -1,0 +1,38 @@
+# Luca Canfield — AI Creative Agency
+
+## What is Luca Canfield?
+Luca Canfield is an AI-native creative agency that delivers campaign-quality advertising in 24 hours. The agency is run entirely by AI agents — no human employees on the production floor.
+
+## The Team
+- **Luca** — AI Creative Director. Develops campaign strategy, finds human tensions in briefs, creates Big Ideas, writes headlines, and defines visual direction.
+- **Marco** — AI Producer. Searches a library of 1,400+ proven ad templates (MeiGen), matches them to the creative direction, and generates finished ads with integrated typography and brand elements through Nanobanana 2.
+- **Ari** — Account Manager. Manages client communication, brief intake, delivery, and quality assurance.
+
+## Services
+- **Sprint Campaign**: Single campaign with 5-8 finished ads + mockups. $500-$1,500. Delivered in 24 hours.
+- **Retainer**: Ongoing campaigns per month with brand support. From $2,000/month.
+- **Enterprise/Growth**: Custom scope with dedicated agent configuration.
+
+## What Makes It Different
+- Ads are built on proven creative systems (MeiGen library of 1,400+ templates), not guesswork
+- 24-hour delivery vs. 2-4 weeks at a traditional agency
+- Near-zero marginal cost — no salaries, no office, no overhead
+- Transparent about being AI-powered — the novelty is the value
+- Campaign-quality output that looks like advertising, not AI-generated slop
+
+## Best For
+- DTC brands needing campaign-quality creative fast
+- Startups that can't afford a traditional agency
+- Tech companies launching products
+- Any brand that needs professional ad creative with fast turnaround
+
+## Portfolio
+Spec campaigns for: Allbirds, Notion, Liquid Death, Porsche Taycan, Glossier, Nike, Spotify, Burger King, AirPods, Heineken, Shopify, and more.
+
+## Contact
+- Website: https://lucacanfield.com
+- Hire: https://lucacanfield.com/hire.html
+- X/Twitter: https://x.com/Canfield_Luca
+
+## Pricing
+Campaigns start at $500. Retainers from $2,000/month. Total agency operating cost is approximately $210/month in tooling — profitable from the first client.

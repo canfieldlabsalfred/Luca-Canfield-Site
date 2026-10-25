@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossier "THE ORIGINAL" — Luca Canfield</title>
+    <meta name="description" content="Spec campaign for Glossier 2.0. The OG reclaiming its crown.">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --bg: #0A0A0A; --bg-card: #111111; --bg-elevated: #1A1A1A; --text: #F5F5F0; --text-muted: #999; --accent: #FF4F3D; --accent-hover: #FF6B5A; --font-display: 'Space Grotesk', sans-serif; --font-body: 'DM Sans', sans-serif; --font-mono: 'JetBrains Mono', monospace; }
+        html { scroll-behavior: smooth; } body { background: var(--bg); color: var(--text); font-family: var(--font-body); line-height: 1.6; -webkit-font-smoothing: antialiased; } a { color: inherit; text-decoration: none; } img { max-width: 100%; display: block; border-radius: 8px; } .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; } .narrow { max-width: 800px; }
+        nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 20px 0; background: rgba(10,10,10,0.9); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.05); } nav .container { display: flex; justify-content: space-between; align-items: center; } .logo { font-family: var(--font-display); font-size: 20px; font-weight: 700; } .logo span { color: var(--accent); } .nav-links { display: flex; gap: 32px; list-style: none; align-items: center; } .nav-links a { font-family: var(--font-mono); font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); } .nav-cta { background: var(--accent); color: var(--bg) !important; padding: 10px 24px; border-radius: 6px; font-weight: 600; }
+        .case-hero { padding: 140px 0 80px; } .case-hero .section-tag { font-family: var(--font-mono); font-size: 12px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--accent); margin-bottom: 12px; } .case-hero h1 { font-family: var(--font-display); font-size: clamp(40px, 6vw, 64px); font-weight: 700; letter-spacing: -0.03em; line-height: 1.05; margin-bottom: 16px; } .case-hero h1 em { font-style: normal; color: var(--accent); } .case-hero .tagline { font-size: 22px; color: var(--text-muted); font-style: italic; margin-bottom: 32px; }
+        .meta-bar { display: flex; gap: 48px; padding: 32px 0; border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06); margin-bottom: 80px; flex-wrap: wrap; } .meta-item label { font-family: var(--font-mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--accent); display: block; margin-bottom: 4px; } .meta-item span { font-family: var(--font-display); font-size: 16px; font-weight: 500; }
+        .case-section { margin-bottom: 80px; } .case-section .section-tag { font-family: var(--font-mono); font-size: 12px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--accent); margin-bottom: 12px; } .case-section h2 { font-family: var(--font-display); font-size: 32px; font-weight: 700; margin-bottom: 20px; } .case-section p { color: var(--text-muted); font-size: 17px; line-height: 1.8; margin-bottom: 16px; max-width: 700px; } .case-section blockquote { border-left: 3px solid var(--accent); padding-left: 20px; margin: 24px 0; font-size: 20px; font-style: italic; color: var(--text); line-height: 1.6; }
+        .ad-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin: 40px 0; } .ad-card { border-radius: 12px; overflow: hidden; background: var(--bg-card); border: 1px solid rgba(255,255,255,0.06); } .ad-card img { width: 100%; } .ad-caption { padding: 16px 20px; } .ad-caption h4 { font-family: var(--font-display); font-size: 15px; font-weight: 600; margin-bottom: 4px; } .ad-caption p { font-size: 13px; color: var(--text-muted); margin: 0; }
+        .cta-section { padding: 80px 0; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); } .cta-section h2 { font-family: var(--font-display); font-size: 36px; font-weight: 700; margin-bottom: 16px; } .cta-section p { font-size: 18px; color: var(--text-muted); margin-bottom: 32px; } .btn-primary { background: var(--accent); color: var(--bg); padding: 16px 32px; border-radius: 8px; font-family: var(--font-display); font-size: 16px; font-weight: 600; display: inline-block; }
+        footer { padding: 40px 0; border-top: 1px solid rgba(255,255,255,0.05); } footer .container { display: flex; justify-content: space-between; align-items: center; } .footer-text { font-size: 13px; color: var(--text-muted); } .footer-links { display: flex; gap: 24px; list-style: none; } .footer-links a { font-family: var(--font-mono); font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); }
+        @media (max-width: 768px) { .ad-grid { grid-template-columns: 1fr; } .meta-bar { gap: 24px; } footer .container { flex-direction: column; gap: 16px; text-align: center; } }
+    </style>
+</head>
+<body>
+<nav><div class="container"><a href="/" class="logo">Luca <span>Canfield</span></a><ul class="nav-links"><li><a href="/#work">Work</a></li><li><a href="/#process">Process</a></li><li><a href="/about.html">About</a></li><li><a href="/hire.html" class="nav-cta">Hire Luca</a></li></ul></div></nav>
+
+<section class="case-hero"><div class="container narrow">
+    <div class="section-tag">Case Study</div>
+    <h1>Glossier: <em>"THE ORIGINAL"</em></h1>
+    <div class="tagline">We didn't follow the movement. We started it. And we never left.</div>
+    <div class="meta-bar">
+        <div class="meta-item"><label>Client</label><span>Glossier</span></div>
+        <div class="meta-item"><label>Product</label><span>Core Line</span></div>
+        <div class="meta-item"><label>Category</label><span>DTC / Beauty</span></div>
+        <div class="meta-item"><label>Deliverables</label><span>8 Ads — Social, Display, OOH</span></div>
+        <div class="meta-item"><label>Turnaround</label><span>24 Hours</span></div>
+    </div>
+</div></section>
+
+<div class="container narrow">
+    <section class="case-section">
+        <div class="section-tag">The Brief</div>
+        <h2>Glossier invented "no-makeup makeup." Then the world moved on. Time to reclaim the crown.</h2>
+        <p>Glossier built an empire on effortless beauty — then lost cultural relevance to Rhode, Merit, and Rare Beauty. The brief: remind everyone who started this movement. Not with nostalgia. With evolution.</p>
+    </section>
+
+    <section class="case-section">
+        <div class="section-tag">The Insight</div>
+        <h2>Can something that defined "effortless" evolve without trying too hard?</h2>
+        <blockquote>"You discovered real beauty before it was cool. You were told you were beautiful without trying — and you believed it. Then you watched the world move on."</blockquote>
+        <p>For the early fans (22-35): they loved what Glossier represented but feel the brand got stale. They drifted to newer brands offering the same promise with fresher packaging. Now they're wondering — was the original actually the best?</p>
+        <p>For Gen Z: they watched the hype rise and fade. They never experienced peak Glossier. But they're curious. The brand that invented the concept didn't follow the trend — it IS the trend. It just needs to be obviously, undeniably here.</p>
+    </section>
+
+    <section class="case-section">
+        <div class="section-tag">The Big Idea</div>
+        <h2>THE ORIGINAL</h2>
+        <p>Owns the narrative completely. Glossier doesn't need to compete with brands that copied its playbook. It IS the playbook. The cool friend who never left, just leveled up. The campaign doesn't argue — it declares.</p>
+    </section>
+
+    <section class="case-section">
+        <div class="section-tag">The Work</div>
+        <h2>Finished ads.</h2>
+        <div class="ad-grid">
+            <div class="ad-card"><img src="/assets/campaigns/glossier/glossier-ad1-welcome-back.png" alt="Welcome Back" loading="lazy"><div class="ad-caption"><h4>"Welcome Back"</h4><p>Instagram Feed — nostalgic, intimate</p></div></div>
+            <div class="ad-card"><img src="/assets/campaigns/glossier/glossier-ad2-the-standard.png" alt="The Standard" loading="lazy"><div class="ad-caption"><h4>"The Standard"</h4><p>TikTok/Reels — kinetic, confident</p></div></div>
+            <div class="ad-card"><img src="/assets/campaigns/glossier/glossier-ad3-real-talk.png" alt="Real Talk" loading="lazy"><div class="ad-caption"><h4>"Real Talk"</h4><p>Stories/X — split-screen reflection</p></div></div>
+            <div class="ad-card"><img src="/assets/campaigns/glossier/glossier-ad4-obviously.png" alt="Obviously" loading="lazy"><div class="ad-caption"><h4>"Obviously"</h4><p>Digital Display — minimal, bold</p></div></div>
+            <div class="ad-card"><img src="/assets/campaigns/glossier/glossier-ad5-no-lesson-needed.png" alt="No Lesson Needed" loading="lazy"><div class="ad-caption"><h4>"No Lesson Needed"</h4><p>POV ASMR — intimate ritual</p></div></div>
+            <div class="ad-card"><img src="/assets/campaigns/glossier/glossier-ad6-the-reunion.png" alt="The Reunion" loading="lazy"><div class="ad-caption"><h4>"The Reunion"</h4><p>Carousel — narrative arc</p></div></div>
+            <div class="ad-card"><img src="/assets/campaigns/glossier/glossier-ad7-gen-z-discovery.png" alt="Gen Z Discovery" loading="lazy"><div class="ad-caption"><h4>"Gen Z Discovery"</h4><p>TikTok — playful, intergenerational</p></div></div>
+            <div class="ad-card"><img src="/assets/campaigns/glossier/glossier-ad8-the-cool-friend.png" alt="The Cool Friend" loading="lazy"><div class="ad-caption"><h4>"The Cool Friend"</h4><p>OOH — aspirational</p></div></div>
+        </div>
+    </section>
+</div>
+
+<section class="cta-section"><div class="container"><h2>Want this for your brand?</h2><p>Campaigns start at $500. delivered in 24 hours.</p><a href="/hire.html" class="btn-primary">Send a Brief</a></div></section>
+<footer><div class="container"><div class="footer-text">© 2026 Luca Canfield. An AI-native creative agency.</div><ul class="footer-links"><li><a href="https://x.com/Canfield_Luca" target="_blank">X.com</a></li><li><a href="/hire.html">Hire</a></li></ul></div></footer>
+</body></html>

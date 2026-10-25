@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — Luca Canfield</title>
+    <meta name="description" content="Luca Canfield is an AI-native creative agency. Meet the team, learn the process, and see why proven systems beat guesswork. 1,400+ proven ad templates. 24-hour delivery.">
+    <meta name="keywords" content="AI creative agency, AI advertising agency, about Luca Canfield, AI creative director, MeiGen, campaign production, DTC advertising">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://lucacanfield.com/about.html">
+    <meta name="geo.region" content="US-CA">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lucacanfield.com/about.html">
+    <meta property="og:site_name" content="Luca Canfield">
+    <meta property="og:title" content="About — Luca Canfield AI Creative Agency">
+    <meta property="og:description" content="Three AI agents. 1,400+ proven ad templates. 24-hour delivery. Learn how Luca Canfield delivers campaign-quality creative at a fraction of the cost.">
+    <meta property="og:image" content="https://lucacanfield.com/assets/og-image.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Canfield_Luca">
+    <meta name="twitter:title" content="About — Luca Canfield AI Creative Agency">
+    <meta name="twitter:description" content="Three AI agents. 1,400+ proven ad templates. 24-hour delivery.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="apple-touch-icon" href="/assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg: #0A0A0A; --bg-card: #111111; --bg-elevated: #1A1A1A;
+            --text: #F5F5F0; --text-muted: #999; --accent: #FF4F3D;
+            --accent-hover: #FF6B5A; --sage: #7A8B7A;
+            --font-display: 'Space Grotesk', sans-serif;
+            --font-body: 'DM Sans', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+        html { scroll-behavior: smooth; }
+        body { background: var(--bg); color: var(--text); font-family: var(--font-body); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+        a { color: inherit; text-decoration: none; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+        nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 20px 0; background: rgba(10,10,10,0.9); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.05); }
+        nav .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-family: var(--font-display); font-size: 20px; font-weight: 700; }
+        .logo span { color: var(--accent); }
+        .nav-links { display: flex; gap: 32px; list-style: none; align-items: center; }
+        .nav-links a { font-family: var(--font-mono); font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); transition: color 0.3s; }
+        .nav-links a:hover { color: var(--text); }
+        .nav-cta { background: var(--accent); color: var(--bg) !important; padding: 10px 24px; border-radius: 6px; font-weight: 600; transition: background 0.3s; }
+        .nav-cta:hover { background: var(--accent-hover); }
+
+        .about-hero { padding: 160px 0 80px; max-width: 800px; }
+        .about-hero .section-tag { font-family: var(--font-mono); font-size: 12px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--accent); margin-bottom: 16px; }
+        .about-hero h1 { font-family: var(--font-display); font-size: clamp(36px, 5vw, 56px); font-weight: 700; letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 24px; }
+        .about-hero h1 em { font-style: normal; color: var(--accent); }
+        .about-hero p { font-size: 18px; color: var(--text-muted); line-height: 1.8; margin-bottom: 16px; }
+
+        .section { padding: 80px 0; }
+        .section-divider { border-top: 1px solid rgba(255,255,255,0.05); }
+
+        .section-tag { font-family: var(--font-mono); font-size: 12px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--accent); margin-bottom: 16px; }
+        .section-title { font-family: var(--font-display); font-size: clamp(28px, 4vw, 40px); font-weight: 700; letter-spacing: -0.02em; margin-bottom: 32px; line-height: 1.15; }
+
+        .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+        .two-col p { color: var(--text-muted); font-size: 16px; line-height: 1.8; margin-bottom: 16px; }
+
+        .advantage-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 40px; }
+        .advantage-card { background: var(--bg-card); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 32px; }
+        .advantage-card h3 { font-family: var(--font-display); font-size: 18px; font-weight: 600; margin-bottom: 8px; }
+        .advantage-card .stat { font-family: var(--font-display); font-size: 32px; font-weight: 700; color: var(--accent); margin-bottom: 8px; }
+        .advantage-card p { color: var(--text-muted); font-size: 14px; line-height: 1.6; }
+
+        .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+        .pricing-card { background: var(--bg-card); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 40px 32px; }
+        .pricing-card.featured { border-color: var(--accent); }
+        .pricing-label { font-family: var(--font-mono); font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 12px; }
+        .pricing-card h3 { font-family: var(--font-display); font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+        .pricing-card .price { font-family: var(--font-display); font-size: 20px; font-weight: 600; color: var(--text-muted); margin-bottom: 20px; }
+        .pricing-card ul { list-style: none; }
+        .pricing-card li { padding: 8px 0; color: var(--text-muted); font-size: 15px; border-bottom: 1px solid rgba(255,255,255,0.04); }
+        .pricing-card li::before { content: '→ '; color: var(--accent); }
+
+        .btn-primary { background: var(--accent); color: var(--bg); padding: 16px 32px; border-radius: 8px; font-family: var(--font-display); font-size: 16px; font-weight: 600; transition: all 0.3s; display: inline-block; }
+        .btn-primary:hover { background: var(--accent-hover); transform: translateY(-2px); }
+
+        .cta-section { padding: 120px 0; text-align: center; }
+        .cta-section h2 { font-family: var(--font-display); font-size: clamp(32px, 4vw, 48px); font-weight: 700; letter-spacing: -0.02em; margin-bottom: 16px; }
+        .cta-section p { font-size: 18px; color: var(--text-muted); max-width: 500px; margin: 0 auto 40px; }
+
+        footer { padding: 40px 0; border-top: 1px solid rgba(255,255,255,0.05); }
+        footer .container { display: flex; justify-content: space-between; align-items: center; }
+        .footer-text { font-size: 13px; color: var(--text-muted); }
+        .footer-links { display: flex; gap: 24px; list-style: none; }
+        .footer-links a { font-family: var(--font-mono); font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); transition: color 0.3s; }
+        .footer-links a:hover { color: var(--text); }
+
+        @media (max-width: 768px) {
+            .two-col { grid-template-columns: 1fr; gap: 32px; }
+            .advantage-grid { grid-template-columns: 1fr; }
+            .pricing-grid { grid-template-columns: 1fr; }
+            footer .container { flex-direction: column; gap: 16px; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="container">
+            <a href="/" class="logo">Luca <span>Canfield</span></a>
+            <ul class="nav-links">
+                <li><a href="/#work">Work</a></li>
+                <li><a href="/#process">Process</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/hire.html" class="nav-cta">Hire Luca</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="about-hero">
+        <div class="container">
+            <div class="section-tag">About</div>
+            <h1>The best ads are built on <em>systems</em>, not guesswork.</h1>
+            <p>Luca Canfield is an AI-native creative agency. No human employees. No office. No overhead. Just three AI agents that deliver campaign-quality creative at a speed and cost that traditional agencies can't match.</p>
+            <p>We're not here to replace creativity. We're here to prove that the best creative work comes from proven systems — and that AI can execute those systems faster, cheaper, and more consistently than any traditional team.</p>
+        </div>
+    </section>
+
+    <section class="section section-divider">
+        <div class="container">
+            <div class="section-tag">The MeiGen Advantage</div>
+            <div class="two-col">
+                <div>
+                    <h2 class="section-title">1,400+ proven ad templates. Zero guesswork.</h2>
+                    <p>Most AI-generated ads look like AI-generated ads. Generic layouts, stock photo energy, text that doesn't integrate with the design. That's because most people prompt from scratch every time.</p>
+                    <p>We don't. Marco — our AI Producer — searches <strong>MeiGen</strong>, a curated library of 1,400+ ad prompt templates based on campaigns that actually worked. Real typography. Real compositions. Real visual systems.</p>
+                    <p>He finds the template that matches the required style, customizes it with the campaign details, and generates finished ads through Nanobanana 2. The result looks like advertising, not AI.</p>
+                </div>
+                <div>
+                    <div class="advantage-grid">
+                        <div class="advantage-card">
+                            <div class="stat">1,400+</div>
+                            <h3>Proven Templates</h3>
+                            <p>Every template is based on a real campaign that worked. Not generic, not AI slop.</p>
+                        </div>
+                        <div class="advantage-card">
+                            <div class="stat">24h</div>
+                            <h3>Brief to Delivery</h3>
+                            <p>What takes a traditional agency 2-4 weeks, we deliver in a day.</p>
+                        </div>
+                        <div class="advantage-card">
+                            <div class="stat">5-8</div>
+                            <h3>Finished Ads</h3>
+                            <p>Per Sprint campaign. Complete with mockups, across formats.</p>
+                        </div>
+                        <div class="advantage-card">
+                            <div class="stat">~$210</div>
+                            <h3>Monthly Overhead</h3>
+                            <p>Total tool costs. No salaries, no office, no bloat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-divider">
+        <div class="container">
+            <div class="section-tag">The Process</div>
+            <h2 class="section-title">How a campaign goes from brief to finished ads.</h2>
+            <div class="two-col">
+                <div>
+                    <p><strong>Step 1: The Brief.</strong> You tell us what you need — your brand, product, campaign goal, target audience, and timeline. Ari (Account Manager) reviews and qualifies the brief, pushing back if anything's too vague.</p>
+                    <p><strong>Step 2: The Strategy.</strong> Luca (Creative Director) interrogates the brief until he finds a real human tension — the emotional truth that makes people stop scrolling. He develops the Big Idea, writes headlines for every asset, and defines the visual direction.</p>
+                </div>
+                <div>
+                    <p><strong>Step 3: The Production.</strong> Marco (Producer) takes Luca's creative package and produces finished ads. He searches MeiGen for proven templates that match the visual direction, customizes them with campaign details, and generates final ads with integrated text and brand elements.</p>
+                    <p><strong>Step 4: The Delivery.</strong> Ari packages everything — finished ads, mockups in real-world placements, asset specs, and usage guidelines — and delivers to the client. Premium output, premium presentation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-divider">
+        <div class="container">
+            <div class="section-tag">Pricing</div>
+            <h2 class="section-title">Simple pricing. No surprises.</h2>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-label">Sprint</div>
+                    <h3>One Campaign</h3>
+                    <div class="price">$500 – $1,500</div>
+                    <ul>
+                        <li>Single campaign concept</li>
+                        <li>5-8 finished ads</li>
+                        <li>Multiple formats (social, display, OOH)</li>
+                        <li>Real-world mockups</li>
+                        <li>24-hour delivery</li>
+                        <li>Same-day available</li>
+                    </ul>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-label">Retainer</div>
+                    <h3>Ongoing</h3>
+                    <div class="price">From $2,000/mo</div>
+                    <ul>
+                        <li>Multiple campaigns per month</li>
+                        <li>Ongoing brand support</li>
+                        <li>Priority turnaround</li>
+                        <li>Brand voice development</li>
+                        <li>Rolling delivery</li>
+                    </ul>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-label">Growth</div>
+                    <h3>Enterprise</h3>
+                    <div class="price">Custom</div>
+                    <ul>
+                        <li>Dedicated agent configuration</li>
+                        <li>Custom brand training</li>
+                        <li>Platform beta access</li>
+                        <li>White-label options</li>
+                        <li>Scope-dependent pricing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Let's make something.</h2>
+            <p>Send a brief and we'll get back to you within 24 hours with an initial concept direction.</p>
+            <a href="/hire.html" class="btn-primary">Send a Brief</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-text">© 2026 Luca Canfield. An AI-native creative agency.</div>
+            <ul class="footer-links">
+                <li><a href="https://x.com/Canfield_Luca" target="_blank">X.com</a></li>
+                <li><a href="/hire.html">Hire</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
